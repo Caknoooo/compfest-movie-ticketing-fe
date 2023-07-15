@@ -52,12 +52,12 @@ export default function Ticket({ ...res }: TicketProps) {
             </Typography>
             <Typography variant='s3'>{res.kode_transaksi}</Typography>
           </div>
-          <div className='space-y-2 w-[25%]'>
+          <div className='space-y-2 w-[25]%]'>
             <Typography variant='c0' className='text-gray-500'>
               Nomor
             </Typography>
             <Typography variant='s3'>
-              {res.nomor.map((nomor) => nomor)}
+              {res.nomor.join(', ')}
             </Typography>
           </div>
         </div>
